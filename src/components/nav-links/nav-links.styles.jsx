@@ -60,7 +60,7 @@ export const NavPhoneNumberContainer = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 
   @media screen and (max-width: 900px) {
     display: none;
@@ -68,7 +68,7 @@ export const NavPhoneNumberContainer = styled.div`
 `
 export const NavPhoneNumber = styled(Link)`
   padding: 10px;
-  font-size: 18px ;
+  font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
   border: 1px solid #856B39;

@@ -18,7 +18,7 @@ const NavLinks = () => {
         <NavSocial to="/"><FiMapPin /></NavSocial>
       </NavSocialsContainer>
       <NavPhoneNumberContainer>
-        <NavPhoneNumber to="/"><FaPhoneAlt /> 777888999</NavPhoneNumber>
+        <NavPhoneNumber to="/"><FaPhoneAlt /> +420 777888999</NavPhoneNumber>
       </NavPhoneNumberContainer>
     </>
   )

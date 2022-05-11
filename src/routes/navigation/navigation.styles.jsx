@@ -17,6 +17,7 @@ export const LogoContainer = styled(Link)`
   height: 100%;
   width: 20%;
   padding: 20px 10px;
+  z-index: 10;
 
   @media screen and (max-width: 300px) {
     padding: 15px 5px;
@@ -39,6 +40,7 @@ export const HamburgerContainer = styled.div`
   top: 20px;
   width: 30%;
   order: 2;
+  z-index: 10;
 
   @media screen and (min-width: 901px) {
     display: none;  

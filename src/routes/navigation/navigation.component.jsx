@@ -15,13 +15,22 @@ const Navigation = () => {
 
   const [isOpen, setOpen] = useState(false)
 
+  const closeHamburgerMenu = () => {
+    setOpen(false)
+  }
+
   return (
     <Fragment>
       <NavigationContainer>
         <LogoContainer to='/'><Logo src={chilisLogo} alt='logo'/></LogoContainer>
-        { isOpen ? <MobileNavLinks /> : <NavLinks /> }
+        { isOpen ? (
+            <MobileNavLinks isMobile={true} closeHamburgerMenu={closeHamburgerMenu}/>
+          ) : (
+            <NavLinks isMobile={true} closeHamburgerMenu={closeHamburgerMenu}/>
+          )
+        }
         <HamburgerContainer>
-          <Hamburger toggled={isOpen} toggle={setOpen} rounded color='white' />
+          <Hamburger toggled={isOpen} toggle={setOpen} rounded color='#ad9a74' label="Show menu"/>
         </HamburgerContainer>
       </NavigationContainer>
       <Outlet />

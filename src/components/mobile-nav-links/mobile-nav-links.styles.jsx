@@ -1,30 +1,38 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { motion } from 'framer-motion'
 
-export const MobileNavLinksContainer = styled.div`
+export const MobileNavLinksContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
   position: absolute;
-  background: #181818;
-  width: 40%;
-  top: 110px;
-  right: 5px;
-  z-index: 5;
+  background: rgb(24, 24, 24, 0.9);
+  width: 100%;
+  height: 430px;
+  padding-top: 110px;
+  top: 0;
+  right: 0;
+  z-index: 1;
 
   @media screen and (min-width: 900px) {
     display: none;
   }
 `
-export const MobileNavlink = styled(Link)`
-  padding: 15px;
-  font-size: 16px ;
-  font-weight: 700;
+export const MobileNavlink = styled(motion(Link))`
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px 45px;
+  font-size: 1.3rem;
+  font-weight: 500;
   cursor: pointer;
   color: white;
-  transition: color 0.4s;
-
+  
   &:hover {
     color: #856B39;
+  }
+  @media screen and (min-width: 300px) {
+    font-size: 1rem;
   }
 `
 
@@ -32,19 +40,20 @@ export const MobileNavSocialsContainer = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 5px 10px;
+  justify-content: center;
 `
-export const MobileNavSocial = styled(Link)`
-  padding: 10px;
-  font-size: 18px ;
+export const MobileNavSocial = styled(motion(Link))`
+  padding: 10px 60px;
+  font-size: 1.5rem;
   font-weight: 500;
   cursor: pointer;
   color: #ad9a74;
-  transition: color 0.4s;
-
+  
   &:hover {
     color: #856B39;
+  }
+  @media screen and (max-width: 300px) {
+    font-size: 1rem;
   }
 `
 
@@ -56,20 +65,26 @@ export const NavPhoneNumberContainer = styled.div`
   justify-content: center;
 
   @media screen and (max-width: 900px) {
-    display: none;
+    width: 100%;
   }
 `
-export const NavPhoneNumber = styled(Link)`
-  padding: 10px;
-  font-size: 18px ;
+export const NavPhoneNumber = styled(motion(Link))`
+  padding: 10px 50px;
+  margin: 25px;
+  font-size: 1.3rem;
   font-weight: 500;
   cursor: pointer;
   border: 1px solid #856B39;
   color: #856B39;
-  transition: color 0.4s, background-color 0.4s;
 
   &:hover {
     color: black;
     background-color: #856B39;
+  }
+
+  @media screen and (max-width: 300px) {
+    font-size: 0.9rem;
+    padding: 10px 40px;
+    margin: 0;
   }
 `
