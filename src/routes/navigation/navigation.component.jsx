@@ -6,6 +6,7 @@ import useClickOutside from './useClickOutside.jsx'
 import NavLinks from '../../components/nav-links/nav-links.component'
 import MobileNavLinks from '../../components/mobile-nav-links/mobile-nav-links.component'
 
+
 import { Squash as Hamburger } from 'hamburger-react'
 
 import { LogoContainer, NavigationContainer, HamburgerContainer, Logo } from './navigation.styles'
@@ -20,7 +21,6 @@ const Navigation = () => {
   const closeHamburgerMenu = () => {
     setIsOpen(false)
   }
-
   // close hamburger on click outside
   const domNode = useClickOutside(() => {
     setIsOpen(false);

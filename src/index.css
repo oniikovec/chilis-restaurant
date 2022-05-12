@@ -22,3 +22,9 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.app-wrapper {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 110px;
+}
