@@ -16,16 +16,16 @@ const MobileNavLinks = (props) => {
   return (
     <>
       <MobileNavLinksContainer initial={{opacity: 0}} animate={{opacity: 1}}>
-        <MobileNavlink to="/" initial={animateFrom} animate={animateTo} transition={{delay: 0.05}} onClick={onClickHandler}>MENU</MobileNavlink>
-        <MobileNavlink to="/" initial={animateFrom} animate={animateTo} transition={{delay: 0.10}} onClick={onClickHandler}>GALERIE</MobileNavlink>
-        <MobileNavlink to="/" initial={animateFrom} animate={animateTo} transition={{delay: 0.20}} onClick={onClickHandler}>O RESTAURACI</MobileNavlink>
+        <MobileNavlink to="/menu" initial={animateFrom} animate={animateTo} transition={{delay: 0.05}} onClick={onClickHandler}>MENU</MobileNavlink>
+        <MobileNavlink to="/galerie" initial={animateFrom} animate={animateTo} transition={{delay: 0.10}} onClick={onClickHandler}>GALERIE</MobileNavlink>
+        <MobileNavlink to="/o-restauraci" initial={animateFrom} animate={animateTo} transition={{delay: 0.20}} onClick={onClickHandler}>O RESTAURACI</MobileNavlink>
         <NavPhoneNumberContainer>
-          <NavPhoneNumber to="/" initial={animateFrom} animate={animateTo} transition={{delay: 0.30}} onClick={onClickHandler}><FaPhoneAlt /> +420 777888999</NavPhoneNumber>
+          <NavPhoneNumber href="tel:+420777888999" initial={animateFrom} animate={animateTo} transition={{delay: 0.30}} onClick={onClickHandler}><FaPhoneAlt /> +420 777888999</NavPhoneNumber>
         </NavPhoneNumberContainer>
         <MobileNavSocialsContainer>
-          <MobileNavSocial to="/"initial={animateFrom} animate={animateTo} transition={{delay: 0.40}} onClick={onClickHandler}><FaFacebookF /></MobileNavSocial>
-          <MobileNavSocial to="/"initial={animateFrom} animate={animateTo} transition={{delay: 0.40}} onClick={onClickHandler}><FaInstagram /></MobileNavSocial>
-          <MobileNavSocial to="/"initial={animateFrom} animate={animateTo} transition={{delay: 0.40}} onClick={onClickHandler}><FiMapPin /></MobileNavSocial>
+          <MobileNavSocial href="https://www.facebook.com/chilisdolnipoustevna" initial={animateFrom} animate={animateTo} transition={{delay: 0.40}} onClick={onClickHandler}><FaFacebookF /></MobileNavSocial>
+          <MobileNavSocial href="https://www.facebook.com/chilisdolnipoustevna" initial={animateFrom} animate={animateTo} transition={{delay: 0.40}} onClick={onClickHandler}><FaInstagram /></MobileNavSocial>
+          <MobileNavSocial href="https://bit.ly/3P9jgJj" initial={animateFrom} animate={animateTo} transition={{delay: 0.40}} onClick={onClickHandler}><FiMapPin /></MobileNavSocial>
         </MobileNavSocialsContainer>
       </MobileNavLinksContainer>
     </>

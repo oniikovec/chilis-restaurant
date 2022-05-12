@@ -5,11 +5,20 @@ export const NavigationContainer = styled.div`
   font-family: 'Arvo', serif;
   height: 110px;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 40px;
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: black;
+  z-index: 10;
+
+  @media screen and (max-width: 1280px) {
+    padding: 0 20px;
+  }
+  @media screen and (max-width: 1024px) {
+    padding: 0 10px;
+  }
   `
 
 export const LogoContainer = styled(Link)`
@@ -42,7 +51,7 @@ export const HamburgerContainer = styled.div`
   order: 2;
   z-index: 10;
 
-  @media screen and (min-width: 901px) {
+  @media screen and (min-width: 1025px) {
     display: none;  
   }
 

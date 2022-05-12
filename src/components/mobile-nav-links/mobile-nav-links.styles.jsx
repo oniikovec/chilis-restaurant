@@ -42,7 +42,7 @@ export const MobileNavSocialsContainer = styled.div`
   align-items: center;
   justify-content: center;
 `
-export const MobileNavSocial = styled(motion(Link))`
+export const MobileNavSocial = styled(motion.a)`
   padding: 10px 60px;
   font-size: 1.5rem;
   font-weight: 500;
@@ -52,8 +52,9 @@ export const MobileNavSocial = styled(motion(Link))`
   &:hover {
     color: #856B39;
   }
-  @media screen and (max-width: 300px) {
+  @media screen and (max-width: 330px) {
     font-size: 1rem;
+    padding: 10px 30px;
   }
 `
 
@@ -68,7 +69,7 @@ export const NavPhoneNumberContainer = styled.div`
     width: 100%;
   }
 `
-export const NavPhoneNumber = styled(motion(Link))`
+export const NavPhoneNumber = styled(motion.a)`
   padding: 10px 50px;
   margin: 25px;
   font-size: 1.3rem;

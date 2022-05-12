@@ -6,6 +6,12 @@ const TitleBackgroundImage = () => {
   return (
     <TitleImageContainer>
       <TitleImage alt='title-image' />
+      <TitleImage alt='title-image' />
+      <TitleImage alt='title-image' />
+      <TitleImage alt='title-image' />
+      <TitleImage alt='title-image' />
+      <TitleImage alt='title-image' />
+      
     </TitleImageContainer>
   )
 }

@@ -1,6 +1,7 @@
-import { useState, Fragment } from 'react'
+import { useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import chilisLogo from '../../assets/logo.png'
+import useClickOutside from './useClickOutside.jsx'
 
 import NavLinks from '../../components/nav-links/nav-links.component'
 import MobileNavLinks from '../../components/mobile-nav-links/mobile-nav-links.component'
@@ -11,17 +12,24 @@ import { LogoContainer, NavigationContainer, HamburgerContainer, Logo } from './
 import './navigation.styles'
 
 
+
 const Navigation = () => {
 
-  const [isOpen, setOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
 
   const closeHamburgerMenu = () => {
-    setOpen(false)
+    setIsOpen(false)
   }
 
+  // close hamburger on click outside
+  const domNode = useClickOutside(() => {
+    setIsOpen(false);
+  });
+
+
   return (
-    <Fragment>
-      <NavigationContainer>
+    <>
+      <NavigationContainer ref={domNode}>
         <LogoContainer to='/'><Logo src={chilisLogo} alt='logo'/></LogoContainer>
         { isOpen ? (
             <MobileNavLinks isMobile={true} closeHamburgerMenu={closeHamburgerMenu}/>
@@ -30,11 +38,11 @@ const Navigation = () => {
           )
         }
         <HamburgerContainer>
-          <Hamburger toggled={isOpen} toggle={setOpen} rounded color='#ad9a74' label="Show menu"/>
+          <Hamburger toggled={isOpen} toggle={setIsOpen} rounded color='#ad9a74' label="Show menu"/>
         </HamburgerContainer>
       </NavigationContainer>
       <Outlet />
-    </Fragment>
+    </>
   )
 }
 

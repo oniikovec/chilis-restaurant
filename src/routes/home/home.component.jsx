@@ -1,12 +1,11 @@
-import TitleBackgroundImage from '../../components/title-background-image/title-background-image.component';
-import { HomeContainer } from './home.styles'
+import HeaderSection from "../../components/header-section/header-section.component";
 
 const Home = () => {
 
   return (
-    <HomeContainer>
-      <TitleBackgroundImage />
-    </HomeContainer>
+    <>
+      <HeaderSection />
+    </>
   );
 }
 

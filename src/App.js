@@ -4,6 +4,7 @@ import Home from './routes/home/home.component';
 import './App.css';
 
 const App = () => {
+
   return (
     <Routes>
       <Route path='/' element={<Navigation />}>

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { motion } from 'framer-motion'
 
 export const NavLinksContainer = styled.div`
   width: 50%;
@@ -8,14 +8,14 @@ export const NavLinksContainer = styled.div`
   align-items: center;
   justify-content: flex-start;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1280px) {
     justify-content: center;
   }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1024px) {
     display: none;
   }
 `
-export const Navlink = styled(Link)`
+export const Navlink = styled(motion.a)`
   padding: 10px 30px;
   font-size: 16px ;
   font-weight: 700;
@@ -27,7 +27,7 @@ export const Navlink = styled(Link)`
       color: #856B39;
     }
   
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1280px) {
       padding: 10px 15px;
   }
 `
@@ -39,11 +39,11 @@ export const NavSocialsContainer = styled.div`
   align-items: center;
   justify-content: flex-end;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1024px) {
     display: none;
   }
 `
-export const NavSocial = styled(Link)`
+  export const NavSocial = styled(motion.a)`
   padding: 10px;
   font-size: 18px ;
   font-weight: 500;
@@ -62,11 +62,11 @@ export const NavPhoneNumberContainer = styled.div`
   align-items: center;
   justify-content: flex-end;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1024px) {
     display: none;
   }
 `
-export const NavPhoneNumber = styled(Link)`
+export const NavPhoneNumber = styled(motion.a)`
   padding: 10px;
   font-size: 1rem;
   font-weight: 500;
@@ -79,7 +79,7 @@ export const NavPhoneNumber = styled(Link)`
     color: black;
     background-color: #856B39;
   }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1024px) {
     justify-content: flex-start;
   }
 
