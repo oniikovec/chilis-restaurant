@@ -28,14 +28,14 @@ export const LogoContainer = styled(Link)`
   padding: 20px 10px;
   z-index: 10;
 
-  @media screen and (max-width: 300px) {
+  @media screen and (max-width: 468px) {
     padding: 15px 5px;
   }
 `
 
 export const Logo = styled.img`
 
-  @media screen and (max-width: 300px) {
+  @media screen and (max-width: 468px) {
     height: 85%;
     padding: 5px 0px;
   }

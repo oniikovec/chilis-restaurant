@@ -1,4 +1,4 @@
-import { HeaderContainer, HeaderImageContainer, HeaderTextContainer, HeaderImage, HeaderInfoContainer, HeaderInfo, HeaderH1, HeaderH2, HeaderInfoRow, HeaderInfoRowLeft, HeaderInfoRowRight } from './header-section.styles'
+import { HeaderContainer, HeaderImageContainer, HeaderTextContainer, HeaderImage, HeaderInfoContainer, HeaderInfo, Headers, HeaderH1, HeaderH2, HeaderInfoRow, HeaderInfoRowLeft, HeaderInfoRowRight } from './header-section.styles'
 import { BsPinMapFill } from 'react-icons/bs'
 import { AiOutlineClockCircle } from 'react-icons/ai'
 
@@ -9,19 +9,21 @@ const HeaderSection = () => {
     <>
       <HeaderContainer>
         <HeaderImageContainer>
-          <HeaderImage />
+          <HeaderImage initial={{opacity: 0, y: 200}} animate={{opacity: 1, y: 0}} transition={{duration: 0.7 }}/>
         </HeaderImageContainer>
         <HeaderTextContainer>
           <HeaderInfoContainer>
-            <HeaderH1 initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 0.6, duration: 2}}>CHUŤ <span style={{color: "green" }}>ME</span><span style={{color: "white" }}>XI</span><span style={{color: "red" }}>KA</span></HeaderH1>
-            <HeaderH2 initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 0.6, duration: 2}}>V DOLNÍ POUSTEVNĚ</HeaderH2>
+            <Headers initial={{opacity: 0}} animate={{opacity: 1}} transition={{delay: 0.6, duration: 2}}>
+              <HeaderH1>CHUŤ <span style={{color: "green" }}>ME</span><span style={{color: "white" }}>XI</span><span style={{color: "red" }}>KA</span></HeaderH1>
+              <HeaderH2>V DOLNÍ POUSTEVNĚ</HeaderH2>
+            </Headers>
             <HeaderInfo>
               <HeaderInfoRow>
                 <HeaderInfoRowLeft>
                   <i><BsPinMapFill/></i>
                 </HeaderInfoRowLeft>
                 <HeaderInfoRowRight>
-                  <p>LOBENDAVSKÁ 184</p>
+                  <p><a href="https://bit.ly/3P9jgJj" style={{color: 'white'}}>LOBENDAVSKÁ 184</a></p>
                   <p>407 82 DOLNÍ POUSTEVNA</p>
                   <a href="tel:+420777888999"><span>+420 777 888 999</span></a>
                   <br/>

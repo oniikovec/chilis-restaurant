@@ -21,11 +21,12 @@ export const HeaderContainer = styled.div`
 export const HeaderTextContainer = styled.div`
   display: flex;
   flex: 1;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
   flex-direction: column;
   color: white;
   margin: 0 50px;
+
 
   @media screen and (max-width: 1280px) {
     margin: 0 35px;
@@ -39,7 +40,14 @@ export const HeaderTextContainer = styled.div`
     margin: 0;
   }
 `
-export const HeaderH1 = styled(motion.h1)`
+export const Headers = styled(motion.div)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`
+
+export const HeaderH1 = styled.h1`
   font-family: 'Bitter', serif;
   color: #ad9a74;
   font-size: 4.5rem;
@@ -50,28 +58,36 @@ export const HeaderH1 = styled(motion.h1)`
     font-size: 3.5rem;
   }
   @media screen and (max-width: 1024px) {
-    font-size: 2.5rem;
+    font-size: 2.9rem;
   }
   @media screen and (max-width: 768px) {
-    font-size: 2rem;
+    font-size: 4rem;
   }
   @media screen and (max-width: 480px) {
     font-size: 3rem;
   }
-  
+  @media screen and (max-width: 290px) {
+    font-size: 2rem;
+  }
 `
 export const HeaderH2 = styled(HeaderH1)`
   padding-bottom: 30px;
   font-size: 3rem;
   
   @media screen and (max-width: 1280px) {
+    font-size: 2.3rem;
+  }
+  @media screen and (max-width: 1024px) {
     font-size: 2rem;
   }
   @media screen and (max-width: 768px) {
-    font-size: 1.5rem;
+    font-size: 2.7rem;
   }
   @media screen and (max-width: 480px) {
     font-size: 2rem;
+  }
+  @media screen and (max-width: 290px) {
+    font-size: 1.35rem;
   }
 `
 
@@ -79,10 +95,18 @@ export const HeaderH2 = styled(HeaderH1)`
 export const HeaderInfoContainer = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 `
 export const HeaderInfo = styled.div`
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 2;
+    width: 85vw;
+  }
 `
 export const HeaderInfoRow = styled.div`
   font-family: 'Bitter', serif;
@@ -95,7 +119,7 @@ export const HeaderInfoRow = styled.div`
   p {
     margin: 0;
   }
-
+  
 `
 
 export const HeaderInfoRowLeft = styled.div`
@@ -103,22 +127,38 @@ export const HeaderInfoRowLeft = styled.div`
   font-size: 1.5rem;
   flex: 1;
   margin-right: 10px;
-  
+
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
   @media screen and (max-width: 480px) {
     font-size: 2rem;
     margin-right: 30px;
   }
+  @media screen and (max-width: 290px) {
+    font-size: 1.2rem;
+  }
 `
 export const HeaderInfoRowRight= styled.div`
-  flex: 10;
+  flex: 8;
+
+  
 
   span {
     color: #ad9a74;
   }
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+  }
   @media screen and (max-width: 480px) {
     font-size: 1.2rem;
-    font-weight: 500;
     line-height: 2rem;
+  }
+  @media screen and (max-width: 290px) {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
   }
 `
 
@@ -128,9 +168,10 @@ export const HeaderImageContainer = styled.div`
   align-items: center;
   justify-content: flex-end;
   margin: 50px;
+
   @media screen and (max-width: 768px) {
     order: 1;
-}
+  }
 `
 export const HeaderImage = styled(motion.div)`
   background-image: url(${nachosImage});
@@ -138,9 +179,15 @@ export const HeaderImage = styled(motion.div)`
 	overflow: hidden;
 	background-size: cover;
 	background-position: 50%;
-  height: 35vh;
-  width: 100%;
+  width: 40vw;
+  height: 480px;
   
+  @media screen and (max-width: 1280px) {
+    height: 450px;
+  }
+  @media screen and (max-width: 1024px) {
+    height: 430px;
+  }
   @media screen and (max-width: 768px) {
     height: 30vh;
     width: 100vw;

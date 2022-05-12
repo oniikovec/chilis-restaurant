@@ -11,17 +11,17 @@ const NavLinks = () => {
   return (
     <>
       <NavLinksContainer>
-        <Navlink to="/menu" initial={animateFrom} animate={animateTo} transition={{delay: 0.1}}>MENU</Navlink>
-        <Navlink to="/galerie" initial={animateFrom} animate={animateTo} transition={{delay: 0.2}}>GALERIE</Navlink>
-        <Navlink to="/o-restauraci" initial={animateFrom} animate={animateTo} transition={{delay: 0.3}}>O RESTAURACI</Navlink>
+        <Navlink to="/menu" initial={animateFrom} animate={animateTo} transition={{delay: 0.3}}>MENU</Navlink>
+        <Navlink to="/galerie" initial={animateFrom} animate={animateTo} transition={{delay: 0.4}}>GALERIE</Navlink>
+        <Navlink to="/o-restauraci" initial={animateFrom} animate={animateTo} transition={{delay: 0.5}}>O RESTAURACI</Navlink>
       </NavLinksContainer>
       <NavSocialsContainer>
-        <NavSocial href="https://www.facebook.com/chilisdolnipoustevna" initial={animateFrom} animate={animateTo} transition={{delay: 0.40}}><FaFacebookF /></NavSocial>
-        <NavSocial href="https://www.facebook.com/chilisdolnipoustevna" initial={animateFrom} animate={animateTo} transition={{delay: 0.50}}><FaInstagram /></NavSocial>
-        <NavSocial href="https://bit.ly/3P9jgJj" initial={animateFrom} animate={animateTo} transition={{delay: 0.60}}><FiMapPin /></NavSocial>
+        <NavSocial href="https://www.facebook.com/chilisdolnipoustevna" initial={animateFrom} animate={animateTo} transition={{delay: 0.6}}><FaFacebookF /></NavSocial>
+        <NavSocial href="https://www.facebook.com/chilisdolnipoustevna" initial={animateFrom} animate={animateTo} transition={{delay: 0.6}}><FaInstagram /></NavSocial>
+        <NavSocial href="https://bit.ly/3P9jgJj" initial={animateFrom} animate={animateTo} transition={{delay: 0.6}}><FiMapPin /></NavSocial>
       </NavSocialsContainer>
       <NavPhoneNumberContainer>
-        <NavPhoneNumber href="tel:+420777888999" initial={animateFrom} animate={animateTo} transition={{delay: 0.70}}><FaPhoneAlt /> +420 777888999</NavPhoneNumber>
+        <NavPhoneNumber href="tel:+420777888999" initial={animateFrom} animate={animateTo} transition={{delay: 0.6}}><FaPhoneAlt /> +420 777888999</NavPhoneNumber>
       </NavPhoneNumberContainer>
     </>
   )
