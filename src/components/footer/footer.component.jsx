@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <>
       <FooterContainer>
-        <p class="copyright">© {getYear} <a href="https://oniikovec.com">oniikovec</a></p>
+        <p>© {getYear} <a href="https://oniikovec.com">oniikovec</a></p>
       </FooterContainer>
     </>
   )
