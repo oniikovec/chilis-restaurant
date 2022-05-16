@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import chilisLogo from '../../assets/logo.png'
-import useClickOutside from './useClickOutside.jsx'
+import useClickOutside from '../../hooks/useClickOutside'
 
 import NavLinks from '../../components/nav-links/nav-links.component'
 import MobileNavLinks from '../../components/mobile-nav-links/mobile-nav-links.component'

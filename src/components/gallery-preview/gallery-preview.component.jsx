@@ -1,5 +1,5 @@
 import useFirestore from '../../hooks/useFirestore'
-import { GalleryPreviewContainer, GalleryHeaderContainer, GalleryHeader, GalleryImageContainer, GalleryImage, OpenGalleryButton } from './gallery-preview.styles'
+import { GalleryPreviewContainer, GalleryThumbnail, OpenGalleryButton } from './gallery-preview.styles'
 
 const GalleryPreview = () => {
 
@@ -7,15 +7,10 @@ const GalleryPreview = () => {
 
   return (
     <GalleryPreviewContainer>
-      <GalleryHeaderContainer>
-        <GalleryHeader to="/" >GALERIE</GalleryHeader>
-      </GalleryHeaderContainer>
-      <GalleryImageContainer>
-          { docs && docs.map(doc => (
-          <GalleryImage src={doc.url} key={doc.id} alt={doc.name} />
-          ))}
-        <OpenGalleryButton to="">&gt;</OpenGalleryButton>
-      </GalleryImageContainer>
+      { docs && docs.map(doc => (
+      <GalleryThumbnail src={doc.thumb} key={doc.id} alt={doc.name} />
+      ))}
+      <OpenGalleryButton to="">GALERIE&nbsp;&gt;</OpenGalleryButton>
     </GalleryPreviewContainer>
   )
 }
