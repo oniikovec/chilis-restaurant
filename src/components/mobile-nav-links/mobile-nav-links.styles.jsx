@@ -14,7 +14,7 @@ export const MobileNavLinksContainer = styled(motion.div)`
   right: 0;
   z-index: 1;
 
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 1025px) {
     display: none;
   }
 `
@@ -65,7 +65,7 @@ export const NavPhoneNumberContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1024px) {
     width: 100%;
   }
 `

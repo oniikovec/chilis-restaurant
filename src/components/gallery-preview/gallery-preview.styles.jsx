@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
 export const GalleryPreviewContainer = styled.div`
@@ -32,10 +33,9 @@ export const GalleryPreviewContainer = styled.div`
   }
 `
 
-export const GalleryThumbnail = styled.img`
+export const GalleryThumbnail = styled(motion.img)`
   width: 200px;
   height: 150px;
-  margin: 0 10px;
   cursor: pointer;
   box-shadow: 0px 1px 5px #856B39;
 
@@ -73,7 +73,6 @@ export const OpenGalleryButton = styled(Link)`
   align-items: center;
   width: 200px;
   height: 150px;
-  margin: 0 10px;
   opacity: 0.5;
   font-size: 1.2rem;
   font-weight: 700;

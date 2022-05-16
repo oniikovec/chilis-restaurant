@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { motion } from 'framer-motion'
+import { Link } from "react-router-dom";
 
 export const NavLinksContainer = styled.div`
   width: 50%;
@@ -15,7 +16,7 @@ export const NavLinksContainer = styled.div`
     display: none;
   }
 `
-export const Navlink = styled(motion.a)`
+export const Navlink = styled(motion(Link))`
   padding: 10px 30px;
   font-size: 16px ;
   font-weight: 700;
