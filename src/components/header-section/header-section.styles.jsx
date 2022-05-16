@@ -7,10 +7,7 @@ export const HeaderContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  position: relative;
-  top: 110px;
-  margin: 0;
-  padding-bottom: 100px;
+  padding-top: 110px;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;

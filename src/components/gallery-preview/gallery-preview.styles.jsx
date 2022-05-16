@@ -2,36 +2,33 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 export const GalleryPreviewContainer = styled.div`
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(6, 200px);
+  grid-gap: 20px;
+  padding: 20px;
+  position: relative;
   align-items: center;
   justify-content: center;
-  height: 250px;
   background-color: #241f18;
   
   @media screen and (max-width: 1600px) {
-    height: 220px;
+    grid-template-columns: repeat(6, 180px);
+    grid-gap: 15px;
   }
   @media screen and (max-width: 1366px) {
-    height: 210px;
+    grid-template-columns: repeat(6, 160px);
   }
   @media screen and (max-width: 1280px) {
-    height: 180px;
+    grid-template-columns: repeat(6, 130px);
   }
   @media screen and (max-width: 1024px) {
-    display: grid;
-    grid-template-columns: repeat(4, 160px);
-    height: 270px;
-    
+    grid-template-columns: repeat(4, 150px);
   }
   @media screen and (max-width: 768px) {
-    
+    grid-template-columns: repeat(3, 130px);
   }
   @media screen and (max-width: 480px) {
-    
-  }
-  @media screen and (max-width: 290px) {
-    
+    grid-template-columns: repeat(2, 130px);
   }
 `
 
@@ -49,8 +46,8 @@ export const GalleryThumbnail = styled.img`
   }
 
   @media screen and (max-width: 1600px) {
-    width: 190px;
-    height: 143px;
+    width: 180px;
+    height: 136px;
   }
   @media screen and (max-width: 1366px) {
     width: 160px;
@@ -61,16 +58,12 @@ export const GalleryThumbnail = styled.img`
     height: 98px;
   }
   @media screen and (max-width: 1024px) {
-    
+    width: 150px;
+    height: 112px;
   }
   @media screen and (max-width: 768px) {
-    
-  }
-  @media screen and (max-width: 480px) {
-    
-  }
-  @media screen and (max-width: 290px) {
-    
+    width: 130px;
+    height: 98px;
   }
 `
 
@@ -98,8 +91,8 @@ export const OpenGalleryButton = styled(Link)`
   }
 
   @media screen and (max-width: 1600px) {
-    width: 190px;
-    height: 143px;
+    width: 180px;
+    height: 136px;
   }
   @media screen and (max-width: 1366px) {
     width: 160px;
@@ -110,15 +103,11 @@ export const OpenGalleryButton = styled(Link)`
     height: 98px;
   }
   @media screen and (max-width: 1024px) {
-    
+    width: 150px;
+    height: 112px;
   }
   @media screen and (max-width: 768px) {
-    
-  }
-  @media screen and (max-width: 480px) {
-    
-  }
-  @media screen and (max-width: 290px) {
-    
+    width: 130px;
+    height: 98px;
   }
 `
