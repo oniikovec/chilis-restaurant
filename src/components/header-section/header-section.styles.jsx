@@ -11,7 +11,7 @@ export const HeaderContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    top: 60px;
+    padding-top: 60px;
   }
 `
 
