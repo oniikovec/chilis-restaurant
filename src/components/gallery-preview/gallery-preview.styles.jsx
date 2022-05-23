@@ -6,7 +6,8 @@ export const GalleryPreviewContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(6, 200px);
   grid-gap: 20px;
-  padding: 20px;
+  padding: 50px;
+  margin: 150px 0;
   position: relative;
   align-items: center;
   justify-content: center;
@@ -37,12 +38,12 @@ export const GalleryThumbnail = styled(motion.img)`
   width: 200px;
   height: 150px;
   cursor: pointer;
-  box-shadow: 0px 1px 5px #856B39;
+  box-shadow: 1px 1px 3px #856B39;
 
   &:hover {
     transition: box-shadow 0.3s, transform 0.3s;
-    box-shadow: 0px 1px 10px #856B39;
-    transform: scale(1.05);
+    box-shadow: 1px 1px 7px #856B39;
+    transform: scale(1.03);
   }
 
   @media screen and (max-width: 1600px) {
@@ -67,7 +68,7 @@ export const GalleryThumbnail = styled(motion.img)`
   }
 `
 
-export const OpenGalleryButton = styled(Link)`
+export const OpenGalleryButton = styled(motion(Link))`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,14 +80,14 @@ export const OpenGalleryButton = styled(Link)`
   cursor: pointer;
   box-shadow: 0px 1px 5px #856B39;
   color: #ad9a74;
-  transition: color 0.4s, background-color 0.4s;
 
   &:hover {
     color: black;
     background-color: #856B39;
-    border: 1px solid #856B39;
-    transition: transform 0.3s;
-    transform: scale(1.05);
+    transition: color 0.4s, background-color 0.4s;
+  }
+  &:active {
+    background-color: #57492b;
   }
 
   @media screen and (max-width: 1600px) {

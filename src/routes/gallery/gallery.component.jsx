@@ -12,12 +12,13 @@ const Gallery = () => {
     <>
       <GalleryContainer>
         <GalleryImagesContainer>
-          <PhotoswipeGallery>
+          <PhotoswipeGallery withCaption>
           {
             docs && docs.map(doc => (
               <Item
                 original={doc.url}
                 thumbnail={doc.thumb}
+                caption={doc.caption}
                 key={doc.url}
                 alt={doc.name}
                 width="1024"
