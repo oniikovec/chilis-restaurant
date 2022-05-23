@@ -5,7 +5,7 @@ export const FooterContainer = styled.div`
   bottom: 0;
   width: 100%;
   height: 100px;
-  background-color: #151009;
+  background-color: black;
 
   display: flex;
   align-items: center;
@@ -16,6 +16,7 @@ export const FooterContainer = styled.div`
   }
   a {
     color: #ad9a74;
+    transition: color 0.3s;
 
     &:hover {
       color: #856B39
