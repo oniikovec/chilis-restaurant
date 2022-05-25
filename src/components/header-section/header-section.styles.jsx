@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { motion } from 'framer-motion'
-import nachosImage from '../../assets/about-nachos.jpg'
+import headerImage from '../../assets/header-image-soumrak.jpg'
 
 export const HeaderContainer = styled.div`
   display: flex;
@@ -56,7 +56,7 @@ export const HeaderH1 = styled.h1`
     font-size: 3.5rem;
   }
   @media screen and (max-width: 1024px) {
-    font-size: 2.9rem;
+    font-size: 2.7rem;
   }
   @media screen and (max-width: 768px) {
     font-size: 4rem;
@@ -64,7 +64,7 @@ export const HeaderH1 = styled.h1`
   @media screen and (max-width: 480px) {
     font-size: 3rem;
   }
-  @media screen and (max-width: 290px) {
+  @media screen and (max-width: 333px) {
     font-size: 2rem;
   }
 `
@@ -76,7 +76,7 @@ export const HeaderH2 = styled(HeaderH1)`
     font-size: 2.3rem;
   }
   @media screen and (max-width: 1024px) {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   @media screen and (max-width: 768px) {
     font-size: 2.7rem;
@@ -84,7 +84,7 @@ export const HeaderH2 = styled(HeaderH1)`
   @media screen and (max-width: 480px) {
     font-size: 2rem;
   }
-  @media screen and (max-width: 290px) {
+  @media screen and (max-width: 333px) {
     font-size: 1.35rem;
   }
 `
@@ -99,7 +99,7 @@ export const HeaderInfo = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media screen and (min-width: 480px) and (max-width: 768px) {
+  @media screen and (min-width: 481px) and (max-width: 768px) {
     flex-direction: row;
     justify-content: space-around;
     flex: 2;
@@ -133,7 +133,7 @@ export const HeaderInfoRowLeft = styled.div`
     font-size: 2rem;
     margin-right: 30px;
   }
-  @media screen and (max-width: 290px) {
+  @media screen and (max-width: 333px) {
     font-size: 1.2rem;
   }
 `
@@ -154,30 +154,28 @@ export const HeaderInfoRowRight= styled.div`
     font-size: 1.2rem;
     line-height: 2rem;
   }
-  @media screen and (max-width: 290px) {
+  @media screen and (max-width: 333px) {
     font-size: 0.9rem;
     line-height: 1.5rem;
   }
 `
 
 export const HeaderImageContainer = styled.div`
-  display: flex;
+  /* display: flex;
   flex: 1;
-  align-items: center;
-  justify-content: flex-end;
-  margin: 50px;
 
   @media screen and (max-width: 768px) {
     order: 1;
-  }
+  } */
 `
 export const HeaderImage = styled(motion.div)`
-  background-image: url(${nachosImage});
+  background-image: url(${headerImage});
   position: relative;
 	overflow: hidden;
 	background-size: cover;
 	background-position: 50%;
-  width: 40vw;
+  margin: 50px;
+  width: 45vw;
   height: 480px;
   
   @media screen and (max-width: 1280px) {

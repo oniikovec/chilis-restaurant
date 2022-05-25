@@ -7,7 +7,7 @@ export const GalleryPreviewContainer = styled.div`
   grid-template-columns: repeat(6, 200px);
   grid-gap: 20px;
   padding: 50px;
-  margin: 150px 0;
+  margin-bottom: 200px;
   position: relative;
   align-items: center;
   justify-content: center;
@@ -31,6 +31,7 @@ export const GalleryPreviewContainer = styled.div`
   }
   @media screen and (max-width: 480px) {
     grid-template-columns: repeat(2, 130px);
+    padding: 20px;
   }
 `
 
