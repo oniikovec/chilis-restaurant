@@ -21,13 +21,15 @@ export const MenuPreviewContainer = styled.div`
   h1 {
     text-align: center;
     width: 50%;
+    max-width: 850px;
     margin: 25px auto;
     font-size: 2.4rem;
     padding-bottom: 30px;
   }
 
   p {
-    width: 50%;
+    width: 60%;
+    max-width: 850px;
     margin: 0px auto;
     margin-bottom: 30px;
     font-size: 1.7rem;

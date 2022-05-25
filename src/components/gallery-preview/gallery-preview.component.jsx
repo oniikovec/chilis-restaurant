@@ -16,7 +16,7 @@ const GalleryPreview = () => {
       <PhotoswipeGallery withCaption>
           {
             docs && docs
-            .filter((_, index) => index < 5)
+            .filter((_, index) => index < 3)
             .map(doc => (
               <Item
                 original={doc.url}

@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const AboutRestaurantContainer = styled.div`
-  width: 50%;
+  width: 60%;
+  max-width: 850px;
   margin: 0 auto;
-  padding-bottom: 200px;
+  padding-bottom: 40px;
   
 
   h1 {
@@ -11,6 +12,7 @@ export const AboutRestaurantContainer = styled.div`
     color: #856B39;
     text-align: center;
     padding-bottom: 30px;
+    word-spacing: 5px;
   }
   p {
     font-size: 1.7rem;

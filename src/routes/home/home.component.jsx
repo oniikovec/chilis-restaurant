@@ -10,8 +10,8 @@ const Home = () => {
     <>
       <HeaderSection />
       <AboutRestaurant />
-      <MenuPreview />
       <GalleryPreview />
+      <MenuPreview />
     </>
   );
 }

@@ -13,7 +13,7 @@ const NavLinks = () => {
       <NavLinksContainer>
         <Navlink to="/menu" initial={animateFrom} animate={animateTo} transition={{delay: 0.3}}>MENU</Navlink>
         <Navlink to="/galerie" initial={animateFrom} animate={animateTo} transition={{delay: 0.4}}>GALERIE</Navlink>
-        <Navlink to="/o-restauraci" initial={animateFrom} animate={animateTo} transition={{delay: 0.5}}>O RESTAURACI</Navlink>
+        <Navlink to="#about" initial={animateFrom} animate={animateTo} transition={{delay: 0.5}}>O RESTAURACI</Navlink>
       </NavLinksContainer>
       <NavSocialsContainer>
         <NavSocial href="https://www.facebook.com/chilisdolnipoustevna" initial={animateFrom} animate={animateTo} transition={{delay: 0.6}}><FaFacebookF /></NavSocial>

@@ -3,41 +3,31 @@ import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
 export const GalleryPreviewContainer = styled.div`
+  width: 60%;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(6, 200px);
-  grid-gap: 20px;
-  padding: 50px;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 15px;
   margin-bottom: 200px;
-  position: relative;
   align-items: center;
   justify-content: center;
-  background-color: #241f18;
-  
-  @media screen and (max-width: 1600px) {
-    grid-template-columns: repeat(6, 180px);
-    grid-gap: 15px;
-  }
-  @media screen and (max-width: 1366px) {
-    grid-template-columns: repeat(6, 160px);
-  }
-  @media screen and (max-width: 1280px) {
-    grid-template-columns: repeat(6, 130px);
-  }
-  @media screen and (max-width: 1024px) {
-    grid-template-columns: repeat(4, 150px);
-  }
+
   @media screen and (max-width: 768px) {
-    grid-template-columns: repeat(3, 130px);
+    grid-template-columns: repeat(2, 250px);
+  }
+  @media screen and (max-width: 600px) {
+    grid-template-columns: repeat(2, 220px);
   }
   @media screen and (max-width: 480px) {
-    grid-template-columns: repeat(2, 130px);
-    padding: 20px;
+    grid-template-columns: repeat(2, 150px);
+  }
+  @media screen and (max-width: 333px) {
+    grid-template-columns: repeat(2, 120px);
   }
 `
 
 export const GalleryThumbnail = styled(motion.img)`
-  width: 200px;
-  height: 150px;
+  
   cursor: pointer;
   box-shadow: 1px 1px 3px #856B39;
 
@@ -47,25 +37,29 @@ export const GalleryThumbnail = styled(motion.img)`
     transform: scale(1.03);
   }
 
-  @media screen and (max-width: 1600px) {
-    width: 180px;
-    height: 136px;
-  }
-  @media screen and (max-width: 1366px) {
-    width: 160px;
-    height: 120px;
-  }
   @media screen and (max-width: 1280px) {
-    width: 130px;
-    height: 98px;
-  }
+    width: 180px;
+    height: 135px;
+  } 
   @media screen and (max-width: 1024px) {
     width: 150px;
     height: 112px;
   }
   @media screen and (max-width: 768px) {
-    width: 130px;
-    height: 98px;
+    width: 250px;
+    height: 188px;
+  }
+  @media screen and (max-width: 600px) {
+    width: 220px;
+    height: 165px;
+  }
+  @media screen and (max-width: 480px) {
+    width: 150px;
+    height: 113px;
+  }
+  @media screen and (max-width: 333px) {
+    width: 120px;
+    height: 90px;
   }
 `
 
@@ -91,24 +85,28 @@ export const OpenGalleryButton = styled(motion(Link))`
     background-color: #57492b;
   }
 
-  @media screen and (max-width: 1600px) {
-    width: 180px;
-    height: 136px;
-  }
-  @media screen and (max-width: 1366px) {
-    width: 160px;
-    height: 120px;
-  }
   @media screen and (max-width: 1280px) {
-    width: 130px;
-    height: 98px;
+    width: 180px;
+    height: 135px;
   }
   @media screen and (max-width: 1024px) {
     width: 150px;
     height: 112px;
   }
   @media screen and (max-width: 768px) {
-    width: 130px;
-    height: 98px;
+    width: 250px;
+    height: 188px;
+  }
+  @media screen and (max-width: 600px) {
+    width: 220px;
+    height: 165px;
+  }
+  @media screen and (max-width: 480px) {
+    width: 150px;
+    height: 113px;
+  }
+  @media screen and (max-width: 333px) {
+    width: 120px;
+    height: 90px;
   }
 `
