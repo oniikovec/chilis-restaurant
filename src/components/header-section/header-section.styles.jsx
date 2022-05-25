@@ -8,6 +8,7 @@ export const HeaderContainer = styled.div`
   align-items: center;
   justify-content: space-around;
   padding-top: 110px;
+  padding-bottom: 100px;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;

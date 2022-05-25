@@ -12,7 +12,8 @@ const Gallery = () => {
     <>
       <GalleryContainer>
         <GalleryHeader>
-          <h1>Mexická kuchyně, lokální suroviny.</h1>
+          <h1>GALERIE</h1>
+          <p>Chilis Restaurant</p>
         </GalleryHeader>
         <GalleryImagesContainer>
           <PhotoswipeGallery withCaption>

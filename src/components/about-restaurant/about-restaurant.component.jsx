@@ -4,7 +4,7 @@ const AboutRestaurant = () => {
 
   return (
     <AboutRestaurantContainer>
-      <h1>THIS IS ABOUT REST MADAFAKA</h1>
+      <h1>THIS IS ABOUT REST section</h1>
     </AboutRestaurantContainer>
   )
 }
