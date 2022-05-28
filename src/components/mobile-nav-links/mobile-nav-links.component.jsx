@@ -18,7 +18,6 @@ const MobileNavLinks = (props) => {
       <MobileNavLinksContainer initial={{opacity: 0}} animate={{opacity: 1}}>
         <MobileNavlink to="/menu" initial={animateFrom} animate={animateTo} transition={{delay: 0.05}} onClick={onClickHandler}>MENU</MobileNavlink>
         <MobileNavlink to="/galerie" initial={animateFrom} animate={animateTo} transition={{delay: 0.10}} onClick={onClickHandler}>GALERIE</MobileNavlink>
-        <MobileNavlink to="/o-restauraci" initial={animateFrom} animate={animateTo} transition={{delay: 0.20}} onClick={onClickHandler}>O RESTAURACI</MobileNavlink>
         <NavPhoneNumberContainer>
           <NavPhoneNumber href="tel:+420777888999" initial={animateFrom} animate={animateTo} transition={{delay: 0.30}} onClick={onClickHandler}><FaPhoneAlt /> +420 777888999</NavPhoneNumber>
         </NavPhoneNumberContainer>

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { motion } from 'framer-motion'
 import { Link } from "react-router-dom";
+import { Link as ScrollLinkImport } from 'react-scroll'
 
 export const NavLinksContainer = styled.div`
   width: 50%;
@@ -17,6 +18,23 @@ export const NavLinksContainer = styled.div`
   }
 `
 export const Navlink = styled(motion(Link))`
+  padding: 10px 30px;
+  font-size: 16px ;
+  font-weight: 700;
+  cursor: pointer;
+  color: white;
+  transition: color 0.4s;
+
+    &:hover {
+      color: #856B39;
+    }
+  
+    @media screen and (max-width: 1280px) {
+      padding: 10px 15px;
+  }
+`
+
+export const ScrollLink = styled(motion(ScrollLinkImport))`
   padding: 10px 30px;
   font-size: 16px ;
   font-weight: 700;
