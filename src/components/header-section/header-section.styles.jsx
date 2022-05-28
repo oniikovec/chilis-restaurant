@@ -187,6 +187,7 @@ export const HeaderImage = styled(motion.div)`
   @media screen and (max-width: 768px) {
     height: 30vh;
     width: 100vw;
+    margin: 0;
   }
 `
 
