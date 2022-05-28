@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import menuPreviewImage from '../../assets/menu-preview-image3.jpg'
+import menuPreviewImage from '../../assets/menu-preview-image4.jpg'
 import { Link } from 'react-router-dom'
 
 export const MenuPreviewContainer = styled.div`
@@ -10,7 +10,6 @@ export const MenuPreviewContainer = styled.div`
   background-position: 50%;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 200px;
   padding: 100px 0;
   color: white;
   display: flex;
@@ -53,6 +52,7 @@ export const MenuPreviewContainer = styled.div`
     }
   }
   @media screen and (max-width: 768px) {
+    padding: 50px 0;
     h1 {
       width: 80%;
       font-size: 2rem;

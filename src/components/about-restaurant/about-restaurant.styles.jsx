@@ -5,7 +5,6 @@ export const AboutRestaurantContainer = styled.div`
   max-width: 850px;
   margin: 0 auto;
   padding-bottom: 40px;
-  
 
   h1 {
     font-size: 2.4rem;

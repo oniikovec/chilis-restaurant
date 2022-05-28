@@ -14,6 +14,7 @@ export const GalleryPreviewContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     grid-template-columns: repeat(2, 250px);
+    margin-bottom: 100px;
   }
   @media screen and (max-width: 600px) {
     grid-template-columns: repeat(2, 220px);
