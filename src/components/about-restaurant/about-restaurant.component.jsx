@@ -1,6 +1,6 @@
 import { AboutRestaurantContainer } from './about-restaurant.styles'
 
-const AboutRestaurant = () => {
+const AboutRestaurant = () => {  
 
   return (
     <AboutRestaurantContainer id='about'>
