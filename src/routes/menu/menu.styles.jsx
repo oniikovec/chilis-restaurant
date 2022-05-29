@@ -17,3 +17,14 @@ export const MenuContainer = styled.div`
   }
 `
 
+export const Desserts = styled.span`
+  color: white;
+`
+
+export const MenuSection = styled.div`
+  padding-bottom: 40px;
+
+  h2, h3 {
+    margin: 10px 0;
+  }
+`

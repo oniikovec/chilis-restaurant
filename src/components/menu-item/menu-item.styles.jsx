@@ -22,3 +22,4 @@ export const MenuItemDescription = styled.span`
   color: gray;
   margin-top: 5px;
 `
+

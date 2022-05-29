@@ -1,14 +1,14 @@
 import MenuItem from "../menu-item/menu-item.component"
 import useFirestore from '../../hooks/useFirestore'
 
-const MainDishes = () => {
+const ForChildren = () => {
 
-  const { docs } = useFirestore('main-courses')  
+  const { docs } = useFirestore('for-children')
 
   return (
     <>
       {
-        docs && docs.map(doc => (          
+        docs && docs.map(doc => (
           <MenuItem 
             key={doc.id}
             name={doc.name}
@@ -21,4 +21,4 @@ const MainDishes = () => {
     
   )
 }
-export default MainDishes
+export default ForChildren
