@@ -10,6 +10,12 @@ export const MenuItemHeadingContainer = styled.div`
   justify-content: space-between;
   align-items: flex-end;
   padding-bottom: 5px;
+  font-weight: 500;
+
+  span {
+    color: #856B39;
+    color: white;
+  }
 `
 
 export const MenuItemDescription = styled.span`
