@@ -4,6 +4,7 @@ export const GalleryContainer = styled.div`
   width: 80%;
   min-width: 260px;
   padding-top: 110px;
+  padding-bottom: 100px;
   margin: 0 auto;
 
   @media screen and (max-width: 1366px) {

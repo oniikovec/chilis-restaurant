@@ -8,7 +8,7 @@ export const AboutRestaurantContainer = styled.div`
 
   h1 {
     font-size: 2.4rem;
-    color: #856B39;
+    color: #ad9a74;
     text-align: center;
     padding-bottom: 30px;
     word-spacing: 5px;

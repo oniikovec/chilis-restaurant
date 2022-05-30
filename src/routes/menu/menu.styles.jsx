@@ -7,6 +7,7 @@ export const MenuContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 110px;
+  padding-bottom: 60px;
   color: #ad9a74;
 
   @media screen and (max-width: 1024px) {
