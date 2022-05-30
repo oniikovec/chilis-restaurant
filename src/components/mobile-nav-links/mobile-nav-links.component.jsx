@@ -23,7 +23,7 @@ const MobileNavLinks = (props) => {
         </NavPhoneNumberContainer>
         <MobileNavSocialsContainer>
           <MobileNavSocial href="https://www.facebook.com/chilisdolnipoustevna" initial={animateFrom} animate={animateTo} transition={{delay: 0.40}} onClick={onClickHandler}><FaFacebookF /></MobileNavSocial>
-          <MobileNavSocial href="https://www.facebook.com/chilisdolnipoustevna" initial={animateFrom} animate={animateTo} transition={{delay: 0.40}} onClick={onClickHandler}><FaInstagram /></MobileNavSocial>
+          <MobileNavSocial href="https://www.instagram.com/chilis__restaurant" initial={animateFrom} animate={animateTo} transition={{delay: 0.40}} onClick={onClickHandler}><FaInstagram /></MobileNavSocial>
           <MobileNavSocial href="https://bit.ly/3P9jgJj" initial={animateFrom} animate={animateTo} transition={{delay: 0.40}} onClick={onClickHandler}><FiMapPin /></MobileNavSocial>
         </MobileNavSocialsContainer>
       </MobileNavLinksContainer>

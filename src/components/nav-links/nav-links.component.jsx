@@ -17,7 +17,7 @@ const NavLinks = () => {
       </NavLinksContainer>
       <NavSocialsContainer>
         <NavSocial href="https://www.facebook.com/chilisdolnipoustevna" initial={animateFrom} animate={animateTo} transition={{delay: 0.6}}><FaFacebookF /></NavSocial>
-        <NavSocial href="https://www.facebook.com/chilisdolnipoustevna" initial={animateFrom} animate={animateTo} transition={{delay: 0.6}}><FaInstagram /></NavSocial>
+        <NavSocial href="https://www.instagram.com/chilis__restaurant" initial={animateFrom} animate={animateTo} transition={{delay: 0.6}}><FaInstagram /></NavSocial>
         <NavSocial href="https://bit.ly/3P9jgJj" initial={animateFrom} animate={animateTo} transition={{delay: 0.6}}><FiMapPin /></NavSocial>
       </NavSocialsContainer>
       <NavPhoneNumberContainer>
